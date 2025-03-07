@@ -1,0 +1,9 @@
+@echo off
+set MYSQL_USER=root
+set MYSQL_PASSWORD=Tejas@123
+set DATABASE_NAME=rbank_db
+set BACKUP_FILE=backup_%DATE%.sql
+
+mysqldump -u %MYSQL_USER% -p%MYSQL_PASSWORD% %DATABASE_NAME% > %BACKUP_FILE%
+
+//save file as backup.bat
